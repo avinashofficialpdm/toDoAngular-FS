@@ -1,0 +1,17 @@
+i{
+    float: inline-end;
+}
+.todoContainer{
+    border: 2px dotted rgb(190, 159, 159);
+    border-radius: 10px;
+    overflow: auto;
+    max-height: 600px;
+}
+.todoContainer::-webkit-scrollbar {
+    display: none;
+  }
+  td{
+     
+      font-size: larger;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }

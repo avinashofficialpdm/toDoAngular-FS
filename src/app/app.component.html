@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 mt-5 bg-info p-4 text-white todoContainer">
+      <div class="addSection d-flex">
+        <input type="text" class="form-control w-75" placeholder="Enter your work" [(ngModel)]="event">
+        <input type="date" name="" id="" class="form-control ms-3" [(ngModel)]="date">
+        <button class="btn btn-primary ms-4 ps-4 pe-4" (click)="addEvent()">Add</button>
+      </div>
+      <hr>
+      <div class="list">
+        <table>
+          <tr *ngFor="let todo of toDO; let i=index">
+            <td class="px-4 my-3">{{i+1}}</td>
+            <td style=" width: 25%;" class="px-5 my-3 text-dark">{{todo.eventName}}</td>
+            <td class="px-4 my-3">{{todo.dateofEvent}}</td>
+            <td class="px-4 my-3 float-end"><i class="fa fa-trash text-dark" (click)="remove(i)"></i></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
